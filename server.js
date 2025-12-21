@@ -7,6 +7,7 @@ app.use(express.json());
 app.use(observeMiddleware);
 app.get('/metrics', metricsEndpoint);
 app.get('/health', (req, res) => res.json({ status: 'UP' }));
+app.get('/', (req, res) => res.json({ message: 'Library API is running' }));
 
 
 const books = [
