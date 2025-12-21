@@ -50,6 +50,10 @@ jobs:
   dast-scan:
     needs: docker-build
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+      pull-requests: write
     steps:
       - name: Run Docker Container
         env:
