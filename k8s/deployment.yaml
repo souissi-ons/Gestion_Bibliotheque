@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
       - name: library-api
-        image: library-api:latest
-        imagePullPolicy: IfNotPresent
+        image: onssouissi/library-api:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 3000
         livenessProbe:
