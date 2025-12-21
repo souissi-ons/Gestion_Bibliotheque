@@ -66,3 +66,4 @@ jobs:
         uses: zaproxy/action-baseline@v0.9.0
         with:
           target: 'http://localhost:3000'
+          artifact_name: 'zap-scan-results'
